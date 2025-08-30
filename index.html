@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Slider</title>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/lion_icon.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="main-image">
+            <img id="mainImg" src="img/lion.jpeg" alt="Lion">
+            <div class="overlay"></div>
+            <div class="text">
+                <h2 id="animalTitle">KING OF THE WILD</h2>
+                <p id="animalDesc">Where strength meets elegance in the heart of the savannah</p>
+                <div class="arrows">
+                    <button id="prev" class="arrow" aria-label="Previous">&#8592;</button>
+                    <button id="next" class="arrow" aria-label="Next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+        <div class="thumbnails">
+            <img class="thumb active" src="img/lion.jpeg" alt="Lion" data-title="KING OF THE WILD"
+                data-desc="Where strength meets elegance in the heart of the savannah">
+            <img class="thumb" src="img/eagle.jpg" alt="Eagle" data-title="MASTER OF THE SKIES"
+                data-desc="A symbol of freedom, power, and sharp vision.">
+            <img class="thumb" src="img/gazelle.jpg" alt="Gazelle" data-title="THE GRACEFUL RUNNER"
+                data-desc="Swift and elegant, moving through the savannah with ease.">
+            <img class="thumb" src="img/tiger.jpg" alt="Tiger" data-title="STRIPED HUNTER"
+                data-desc="Stealth and power combined in the dense forests.">
+            <img class="thumb" src="img/elephant.jpg" alt="Elephant" data-title="THE GENTLE GIANT"
+                data-desc="Strength, wisdom, and calm presence across the plains.">
+        </div>
+    </div>
+    <!-- JavaScript Is Here -->
+    <script src="js/design.js"></script>
+</body>
+
+</html>
